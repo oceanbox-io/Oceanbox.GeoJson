@@ -1,0 +1,9 @@
+variables:
+  DEPLOY_NAME: default
+  DEPLOY_NAMESPACE: default
+
+include:
+  - project: oceanbox/gitlab-ci
+    ref: main
+    file: DotnetPackage.gitlab-ci.yml
+
