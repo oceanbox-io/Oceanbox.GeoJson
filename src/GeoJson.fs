@@ -99,6 +99,7 @@ with
         let decodeCoord = Decode.array Decode.float
         let decodePoints = Decode.array decodeCoord
         let decodeSegments = Decode.array decodePoints
+        let decodeMultiSegments = Decode.array decodeSegments
         let rec decoder () =
             Decode.object (fun get ->
                 let inline getCoords (f :
@@ -119,13 +120,16 @@ with
                 let segments () =
                     getCoords decodeSegments
                     |> Array.map (Array.map toCoord)
+                let multiSegments () =
+                    getCoords decodeMultiSegments
+                    |> Array.map (Array.map (Array.map toCoord))
                 match get.Required.Field "type" Decode.string with
                 | "Point" -> coord () |> Point
                 | "MultiPoint" -> points () |> MultiPoint
                 | "LineString" -> points () |> LineString
                 | "Polygon" -> segments () |>  Polygon
                 | "MultiLineString" -> segments () |> MultiLineString
-                | "MultiPolygon" -> segments () |> MultiLineString
+                | "MultiPolygon" -> multiSegments () |> MultiPolygon
                 | "GeometryCollection" ->
                     get.Required.Field "geometries" (Decode.array (decoder ()))
                     |> GeometryCollection
