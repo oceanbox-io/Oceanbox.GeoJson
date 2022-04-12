@@ -1,12 +1,12 @@
 # Oceanbox.GeoJson
 
-## Run
+## Build
 
 `dotnet run`
 
-## Build
+## Package
 
-`dotnet run Bundle`
+`dotnet run pack`
 
 ## Example usage
 
