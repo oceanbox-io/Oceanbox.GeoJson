@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://gitlab.com/oceanbox/Oceanbox.GeoJson/compare/v1.0.0...v1.0.1) (2022-04-12)
+
+
+### Bug Fixes
+
+* bad parser for MultiPolygons ([10e1f21](https://gitlab.com/oceanbox/Oceanbox.GeoJson/commit/10e1f21a746561841e68fc1a8a1024c77a782c27))
+
 # 1.0.0 (2022-04-11)
 
 
