@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     <IsPackable>true</IsPackable>
     <PackageId>Oceanbox.GeoJson</PackageId>
-    <Authors />
-    <Company />
-    <Version>1.0.0</Version>
+    <Authors/>
+    <Company/>
+    <Version>1.0.2</Version>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GeoJson.fs" />
