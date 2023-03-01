@@ -1,36 +1,36 @@
 {
   "version": 1,
   "dependencies": {
-    "net6.0": {
+    "net7.0": {
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[6.0.1, )",
-        "resolved": "6.0.1",
-        "contentHash": "VrFAiW8dEEekk+0aqlbvMNZzDvYXmgWZwAt68AUBqaWK8RnoEVUNglj66bZzhs4/U63q0EfXlhcEKnH1sTYLjw=="
+        "requested": "[7.0.200, )",
+        "resolved": "7.0.200",
+        "contentHash": "NmgUnpNH6Zu9B0SPIhojyo38gnPdkdYFYQfbd6zosEH32kbGY/g/Klk7PfOWe1NAe/O1YOMmK9KhwQ2OWsWEbg=="
       },
       "FSharp.Data": {
         "type": "Direct",
-        "requested": "[4.2.7, )",
-        "resolved": "4.2.7",
-        "contentHash": "gQO0u0q1z9wXOkSmL7TVQLspAGR/S2Vm3CDPStEHCcTQyivkgoZie0IsB2Zyl2inC+hmQa/jcVQNQjo7XB7Ujg==",
+        "requested": "[5.0.2, )",
+        "resolved": "5.0.2",
+        "contentHash": "eQBiOwlk6p8nVehcrxRK/22BwZXzJ2IkHXuqjIZ9Km0bH90WhBoF7OFdLWenc6dYizQmKv3qKIMCkKfVBepi0A==",
         "dependencies": {
-          "FSharp.Core": "4.7.2"
+          "FSharp.Core": "5.0.1"
         }
       },
       "FSharpPlus": {
         "type": "Direct",
-        "requested": "[1.2.2, )",
-        "resolved": "1.2.2",
-        "contentHash": "YzWFuAua/OCevT05FoWSInP3i6DGAwRqyJd0DtFWSisPI6LAqCMTWaj5hT4BDLDabvricVZ5VD/FWfSNubL6Gg==",
+        "requested": "[1.4.0, )",
+        "resolved": "1.4.0",
+        "contentHash": "He6WVVTZpeMQNBlFHniemTSCWITKgwLIgmznNt2kw0U9G/xWSx7USdssGXd2FGmcpk2FlHInYZNwUw848tI0SQ==",
         "dependencies": {
-          "FSharp.Core": "4.6.2"
+          "FSharp.Core": "6.0.6"
         }
       },
       "Thoth.Json": {
         "type": "Direct",
-        "requested": "[7.0.0, )",
-        "resolved": "7.0.0",
-        "contentHash": "0aJtAcjK8Ljx8tSUxHUxZQDInOGtPwGkB+fD9MSrBooe0eqseQAHNSD51CttK5kytqXM6YHPXPN6UFW65GdZFg==",
+        "requested": "[10.0.0, )",
+        "resolved": "10.0.0",
+        "contentHash": "7FOR03CDATObwaHW/daCX1S6xFNSraywXdFCtrV3SEypTyk+qYe9XRYGDBa5Ywp6FkKj6poBXKD9HJRLhK4zog==",
         "dependencies": {
           "FSharp.Core": "4.7.2",
           "Fable.Core": "3.1.6"
@@ -38,12 +38,12 @@
       },
       "Thoth.Json.Net": {
         "type": "Direct",
-        "requested": "[8.0.0, )",
-        "resolved": "8.0.0",
-        "contentHash": "C/b+8g/xUTJTn7pbKC4bMAOy2tyolXAuHTXguT5TNzDKQ6sjnUfFa9B81fTt9PuUOdWFLyRKlXASuFhSQciJGQ==",
+        "requested": "[11.0.0, )",
+        "resolved": "11.0.0",
+        "contentHash": "ugheFKMHRO3ReobCENha5J6uexPrp+Bn2d+WEcFbXaA77sNBWtTlx2StB+7lX8prMqdvO5uqlPeHlg+9dSpkNg==",
         "dependencies": {
           "FSharp.Core": "4.7.2",
-          "Fable.Core": "[3.0.0, 4.0.0)",
+          "Fable.Core": "3.1.6",
           "Newtonsoft.Json": "11.0.2"
         }
       },

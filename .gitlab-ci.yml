@@ -4,6 +4,6 @@ variables:
 
 include:
   - project: oceanbox/gitlab-ci
-    ref: main
+    ref: v2
     file: DotnetPackage.gitlab-ci.yml
 

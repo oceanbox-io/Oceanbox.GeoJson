@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0
+FROM mcr.microsoft.com/dotnet/sdk:7.0
 
 # Add keys and sources lists
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash

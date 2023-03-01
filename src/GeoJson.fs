@@ -180,10 +180,10 @@ with
         }
     static member create (box: float array) =
         {
-            MinX = box.[0]
-            MinY = box.[1]
-            MaxX = box.[2]
-            MaxY = box.[3]
+            MinX = box[0]
+            MinY = box[1]
+            MaxX = box[2]
+            MaxY = box[3]
         }
     static member amend box1 box2 =
         {
