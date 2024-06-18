@@ -1,5 +1,14 @@
 # Changelog
 
+# [1.1.0](https://gitlab.com/oceanbox/Oceanbox.GeoJson/compare/v1.0.2...v1.1.0) (2024-06-18)
+
+
+### Features
+
+* update to net8.0 ([77fc0a7](https://gitlab.com/oceanbox/Oceanbox.GeoJson/commit/77fc0a7d78a38767d3746930616c74dd0c4e3da5))
+* upgrade to net7.0 ([67d2b57](https://gitlab.com/oceanbox/Oceanbox.GeoJson/commit/67d2b57b4f07bc0c59e7506be0094f769fc0279d))
+* upgrade to net7.0 ([e37f4be](https://gitlab.com/oceanbox/Oceanbox.GeoJson/commit/e37f4bea85ed896e949bc9aa37fd25b6725c9c8e))
+
 ## [1.0.2](https://gitlab.com/oceanbox/Oceanbox.GeoJson/compare/v1.0.1...v1.0.2) (2022-09-08)
 
 
