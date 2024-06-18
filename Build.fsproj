@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include=".build/Helpers.fs" />
@@ -11,6 +11,6 @@
     <PackageReference Include="Fake.Core.Target" Version="6.0.0" />
     <PackageReference Include="Fake.DotNet.Cli" Version="6.0.0" />
     <PackageReference Include="Fake.IO.FileSystem" Version="6.0.0" />
-    <PackageReference Include="Farmer" Version="1.7.18" />
+    <PackageReference Include="Farmer" Version="1.8.11" />
   </ItemGroup>
 </Project>
