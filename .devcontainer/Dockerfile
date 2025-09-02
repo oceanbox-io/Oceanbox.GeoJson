@@ -1,28 +1,30 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0
+FROM mcr.microsoft.com/dotnet/sdk:9.0
 
-# Add keys and sources lists
-RUN apt-get update && apt-get install -y ca-certificates gnupg
-RUN mkdir -p /etc/apt/keyrings
-RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
-ENV NODE_MAJOR=20
-RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
+# Bun version
+ARG BUN_INSTALL=/usr/local
+ARG BUN_VERSION=bun-v1.2.16
 
 # Install node, 7zip, yarn, git, process tools
 RUN apt-get update \
-    && apt-get install -y nodejs p7zip-full git procps ssh-client
+    && apt-get install -y p7zip-full git procps ssh-client unzip
+
+# Install Bun
+RUN set -eux; \
+    curl -fsSL https://bun.sh/install > /usr/local/bin/install-bun \
+    && chmod +x /usr/local/bin/install-bun \
+    && /usr/local/bin/install-bun $BUN_VERSION debug-info
+
+ENV BUN_INSTALL=/usr/local
 
 # Clean up
 RUN apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
-# # Install dotnet tools
-# RUN dotnet tool install fable -g
-
 # Trouble brewing
 RUN rm /etc/ssl/openssl.cnf
 
-# add dotnet tools to path to pick up fake and paket installation
+# Add dotnet tools to path to pick up fake and paket installation
 ENV PATH="/root/.dotnet/tools:${PATH}"
 
 # Copy endpoint specific user settings into container to specify
