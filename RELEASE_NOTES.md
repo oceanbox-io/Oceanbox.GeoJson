@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://gitlab.com/oceanbox/Oceanbox.GeoJson/compare/v1.1.0...v1.1.1) (2025-09-02)
+
+
+### Bug Fixes
+
+* move to netstandard2.1 ([ba51ab9](https://gitlab.com/oceanbox/Oceanbox.GeoJson/commit/ba51ab9557730a2720e66155839f83ce4832a9b9))
+* Switch to bun and fix ci ([cda0ef9](https://gitlab.com/oceanbox/Oceanbox.GeoJson/commit/cda0ef99a4782a89ddfb0468379298ffcf774e4c))
+
 # [1.1.0](https://gitlab.com/oceanbox/Oceanbox.GeoJson/compare/v1.0.2...v1.1.0) (2024-06-18)
 
 
