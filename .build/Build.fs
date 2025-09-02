@@ -18,7 +18,7 @@ let versionFile = Path.getFullName ".version"
 Target.create "Clean" (fun _ -> Shell.cleanDir deployPath)
 
 Target.create "InstallClient" (fun _ ->
-    run npm "install" "."
+    run bun "install" "."
     run dotnet "tool restore" "."
 )
 

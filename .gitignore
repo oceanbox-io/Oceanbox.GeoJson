@@ -15,3 +15,5 @@ deploy
 .ionide/
 *.db
 build.fsx.lock
+.direnv/
+result*

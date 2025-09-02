@@ -1,8 +1,11 @@
 variables:
-  PROJECT_NAME: oceanbox.geojson
+  SDK_VERSION: 9.0
   SKIP_TESTS: "true"
 
 include:
   - project: oceanbox/gitlab-ci
-    ref: v3
+    ref: v4.1
     file: DotnetPackage.gitlab-ci.yml
+    inputs:
+        project-name: oceanbox.geojson
+        project-dir: .
