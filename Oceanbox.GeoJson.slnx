@@ -9,7 +9,6 @@
     <File Path="LICENSE" />
     <File Path="README.md" />
   </Folder>
-  <Project Path="Build.fsproj" />
   <Project Path="src/Oceanbox.GeoJson.fsproj" />
   <Project Path="test/Tests.fsproj" />
 </Solution>

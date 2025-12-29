@@ -1,11 +1,15 @@
+# yaml-language-server: $schema=https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json
 variables:
-  SDK_VERSION: 9.0
-  SKIP_TESTS: "true"
+    SKIP_TESTS: "true"
 
 include:
-  - project: oceanbox/gitlab-ci
-    ref: v4.1
-    file: DotnetPackage.gitlab-ci.yml
-    inputs:
-        project-name: oceanbox.geojson
-        project-dir: .
+    - project: oceanbox/gitlab-ci
+      ref: v5.0
+      file: NuGet.gitlab-ci.yml
+      inputs:
+          project-name: oceanbox.geojson
+          project-dir: .
+
+dockerize-fornix:
+    tags:
+        - nix
